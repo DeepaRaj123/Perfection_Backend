@@ -4,6 +4,7 @@ files:
   - source: /
     destination: /home/ec2-user/express-app
     overwrite: true
+    file_exists_behavior: OVERWRITE
 hooks:
   ApplicationStop:
     - location: scripts/application_stop.sh
